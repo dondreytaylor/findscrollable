@@ -1,14 +1,16 @@
-findscrollable
-==============
+findscrollable.js
+=================
 
-FindScrollable is a jQuery plugin used to find scrollable elements within a given elements (i.e. anything with a scrollbar).
+FindScrollable.js is a jQuery plugin used to find scrollable elements within a given element/elements (i.e. anything with a scrollbar).
 
 
- Usage
- -----
+Usage
+-----
 
 ```javascript
+
 $('.selector').findScrollable( arrayofSelectors, callback ); 
+
 
 ```
 
@@ -23,7 +25,7 @@ this case window contains a scrollbar it will be included as well.
 
 $(window).findScrollable(function( elementsThatScroll ) 
 {
-    // Do stuff with elements that scroll
+    // Do stuff with elements that scroll inside of window
 });
 
 ```
@@ -39,7 +41,7 @@ this case `div.content` contains a scrollbar it will be included as well.
 
 $('div.content').findScrollable(['div'], function( elementsThatScroll ) 
 {
-    // Do stuff with elements that scroll inside of 
+    // Do stuff with elements that scroll inside of div.content
 });
 
 ```
